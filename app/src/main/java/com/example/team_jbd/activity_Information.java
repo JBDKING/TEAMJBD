@@ -13,7 +13,7 @@ public class activity_Information extends AppCompatActivity
     Context mContext;
 
     @Override
-    protected void onCreate(Bundle savedInstanceState)
+    public void onCreate(Bundle savedInstanceState)
     {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_information);

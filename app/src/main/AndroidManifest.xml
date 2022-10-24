@@ -30,6 +30,7 @@
         <activity android:name=".activity_Register"/>
         <activity android:name=".activity_Main"/>
         <activity android:name=".activity_Seting"/>
+        <activity android:name=".activity_Information"/>
 
     </application>
 
