@@ -1,5 +1,6 @@
 package com.example.team_jbd;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -27,7 +28,6 @@ public class activity_Register extends AppCompatActivity
 
     public activity_Register()
     {
-
     }
 
     @Override
@@ -43,7 +43,8 @@ public class activity_Register extends AppCompatActivity
         metPwd = findViewById(R.id.et_pwd);
         mBtnRegister = findViewById(R.id.btn_register);
 
-        mBtnRegister.setOnClickListener(new View.OnClickListener() {
+        mBtnRegister.setOnClickListener(new View.OnClickListener()
+        {
             @Override
             public void onClick(View view)
             {
@@ -56,7 +57,8 @@ public class activity_Register extends AppCompatActivity
                     @Override
                     public void onComplete(@NonNull Task<AuthResult> task)
                     {
-                        if (task.isSuccessful()) {
+                        if (task.isSuccessful())
+                        {
                             FirebaseUser firebaseUser = mFirebaseAuth.getCurrentUser();
                             activity_UserAcc account = new activity_UserAcc();
                             account.setIdToken(firebaseUser.getUid());
@@ -66,8 +68,11 @@ public class activity_Register extends AppCompatActivity
                             mDatabaseRef.child("activity_UserAcc").child(firebaseUser.getUid()).setValue(account);
 
                             Toast.makeText(activity_Register.this, "회원 가입 성공", Toast.LENGTH_SHORT).show();
-                        }else{
-                            Toast.makeText(activity_Register.this, "회원 가입 실패", Toast.LENGTH_SHORT).show();
+
+                        }
+                        else
+                        {
+                            Toast.makeText(activity_Register.this, "회원 가입 실패 비밀번호 8자리 이상", Toast.LENGTH_SHORT).show();
                         }
                     }
                 });
