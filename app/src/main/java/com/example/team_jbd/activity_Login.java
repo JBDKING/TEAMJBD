@@ -53,7 +53,7 @@ public class activity_Login extends AppCompatActivity
                         if (task.isSuccessful())
                         {
                             // 로그인 성공
-                            Intent intent = new Intent(activity_Login.this, activity_Main.class);
+                            Intent intent = new Intent(activity_Login.this, activity_Information.class);
                             startActivity(intent);
                             finish();
                         }

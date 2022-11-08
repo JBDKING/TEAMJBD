@@ -35,7 +35,7 @@ public class activity_Logo extends AppCompatActivity
         {
             public void run()
             {
-                Intent mIntent = new Intent(mContext, activity_Login.class);
+                Intent mIntent = new Intent(mContext, activity_Information.class);
                 if (Build.VERSION.SDK_INT > Build.VERSION_CODES.GINGERBREAD_MR1)
                 {
                     mIntent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK | Intent.FLAG_ACTIVITY_NEW_TASK);
@@ -43,7 +43,7 @@ public class activity_Logo extends AppCompatActivity
                 else mIntent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
                 startActivity(mIntent);
             }
-        }, 3000); // 2초 후 본화면으로 넘김
+        }, 3000); // 3초 후 본화면으로 넘김
 
     }
 }
