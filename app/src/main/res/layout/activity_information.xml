@@ -20,7 +20,7 @@
         android:textSize="25dp" />
 
     <TextView
-        android:id="@+id/weight"
+        android:id="@+id/wei"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="300dp"
@@ -32,11 +32,18 @@
         android:textSize="25dp"/>
 
     <Spinner
-        android:id="@+id/spinner"
+        android:id="@+id/spinner1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="195dp"
+        android:layout_marginTop="198dp"
         android:layout_marginLeft="160dp"/>
+
+    <Spinner
+        android:id="@+id/spinner2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="300dp"
+        android:layout_marginLeft="180dp"/>
 
     <Button
         android:id="@+id/button_save"
