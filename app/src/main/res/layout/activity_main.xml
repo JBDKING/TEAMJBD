@@ -25,7 +25,8 @@
         android:layout_height="wrap_content"
         android:layout_alignParentRight="true"
         android:scaleType="centerInside"
-        android:src="@drawable/seting" />
+        android:src="@drawable/seting"
+        android:onClick="onSetting"/>
 
     <ImageView
         android:id="@+id/home"

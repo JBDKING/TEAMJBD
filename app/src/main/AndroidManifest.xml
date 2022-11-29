@@ -32,6 +32,8 @@
         <activity android:name=".activity_Seting"/>
         <activity android:name=".activity_Information"/>
 
+        <receiver android:name=".activity_AlertReceiver"/>
+
     </application>
 
 </manifest>
