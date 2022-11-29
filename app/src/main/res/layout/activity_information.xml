@@ -9,6 +9,7 @@
 
     <TextView
         android:id="@+id/dog"
+        android:text="강아지 종류 : "
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="200dp"
@@ -16,20 +17,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        android:text="강아지 종류 : "
         android:textSize="25dp" />
-
-    <TextView
-        android:id="@+id/wei"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="300dp"
-        android:layout_marginLeft="30dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        android:text="강아지 몸무게 : "
-        android:textSize="25dp"/>
 
     <Spinner
         android:id="@+id/spinner1"
@@ -37,6 +25,18 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="198dp"
         android:layout_marginLeft="160dp"/>
+
+    <TextView
+        android:id="@+id/wei"
+        android:text="강아지 몸무게 : "
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="300dp"
+        android:layout_marginLeft="30dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:textSize="25dp"/>
 
     <Spinner
         android:id="@+id/spinner2"

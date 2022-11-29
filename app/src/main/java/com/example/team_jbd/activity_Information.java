@@ -99,6 +99,10 @@ public class activity_Information extends AppCompatActivity implements AdapterVi
         {
             Toast.makeText(this,"견종을 선택 하세요!",Toast.LENGTH_SHORT).show();
         }
+        else if (item == "몸무게")
+        {
+            Toast.makeText(this,"몸무게를 선택 하세요!",Toast.LENGTH_SHORT).show();
+        }
         else
         {
             member.setPet(item);
@@ -106,6 +110,10 @@ public class activity_Information extends AppCompatActivity implements AdapterVi
             databaseReference.child(id).setValue(member);
 
             Toast.makeText(this, "저장 완료", Toast.LENGTH_SHORT).show();
+
+            Intent intent = new Intent(activity_Information.this, activity_Main.class);
+            startActivity(intent);
+            finish();
         }
     }
 }
