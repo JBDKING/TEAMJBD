@@ -23,27 +23,26 @@
         android:id="@+id/spinner1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="198dp"
-        android:layout_marginLeft="160dp"/>
+        android:layout_toEndOf="@id/dog"
+        android:layout_marginTop="195dp"/>
 
     <TextView
         android:id="@+id/wei"
-        android:text="강아지 몸무게 : "
+        android:text="강아지 무게 : "
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="300dp"
-        android:layout_marginLeft="30dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
+        android:layout_centerVertical="true"
+        android:layout_margin="30dp"
+        android:layout_below="@id/dog"
         android:textSize="25dp"/>
 
     <Spinner
         android:id="@+id/spinner2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="300dp"
-        android:layout_marginLeft="180dp"/>
+        android:layout_below="@id/spinner1"
+        android:layout_marginLeft="170dp"
+        android:layout_marginTop="15dp"/>
 
     <Button
         android:id="@+id/button_save"
@@ -54,6 +53,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         android:text="저장하기"
-        android:textSize="50px"/>
+        android:textSize="30dp"
+        android:backgroundTint="#FFCD28"/>
 
 </RelativeLayout>

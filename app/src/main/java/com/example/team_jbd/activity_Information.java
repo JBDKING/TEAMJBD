@@ -32,9 +32,9 @@ public class activity_Information extends AppCompatActivity implements AdapterVi
 
     Context mContext;
 
-    String[] pet = {"견종","골든리트리버","닥스훈트","말티즈","믹스견","비글","비숑 프리제","사모예드","스피츠","시바견","시츄",
+    String[] pet = {"강아지 종류 : ","골든리트리버","닥스훈트","말티즈","믹스견","비글","비숑 프리제","사모예드","스피츠","시바견","시츄",
                     "요크셔테리어","웰시코기","진돗개","치와와","포메라니안","푸들","허스키"};
-    String[] wei = {"몸무게","0~5kg","5~10kg","10~15kg","15~20kg","20~30kg","30kg↑"};
+    String[] wei = {"강아지 무게 : ","0~5kg","5~10kg","10~15kg","15~20kg","20~30kg","30kg↑"};
 
     @Override
     public void onCreate(Bundle savedInstanceState)
