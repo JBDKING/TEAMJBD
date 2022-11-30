@@ -32,8 +32,9 @@ public class activity_Information extends AppCompatActivity implements AdapterVi
 
     Context mContext;
 
-    String[] pet = {"선택","웰시코기","시바견","말티즈","푸들","포메라니안","비숑"};
-    String[] wei = {"선택","1","2","3","4","5","6"};
+    String[] pet = {"견종","골든리트리버","닥스훈트","말티즈","믹스견","비글","비숑 프리제","사모예드","스피츠","시바견","시츄",
+                    "요크셔테리어","웰시코기","진돗개","치와와","포메라니안","푸들","허스키"};
+    String[] wei = {"몸무게","0~5kg","5~10kg","10~15kg","15~20kg","20~30kg","30kg↑"};
 
     @Override
     public void onCreate(Bundle savedInstanceState)
@@ -95,7 +96,7 @@ public class activity_Information extends AppCompatActivity implements AdapterVi
 
     void saveValue(String item)
     {
-        if (item == "선택")
+        if (item == "견종")
         {
             Toast.makeText(this,"견종을 선택 하세요!",Toast.LENGTH_SHORT).show();
         }
