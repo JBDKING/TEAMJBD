@@ -19,15 +19,15 @@ public class activity_Savedata extends AppCompatActivity
     private TextView textView;
 
     DatabaseReference mRootRef = FirebaseDatabase.getInstance().getReference();
-    DatabaseReference conditionRef = mRootRef.child("message");
+    DatabaseReference conditionRef = mRootRef.child("pet");
 
     @Override
     protected void onCreate(Bundle savedInstanceState)
     {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_);
+        setContentView(R.layout.activity_main);
 
-        textView = (TextView) findViewById(R.id.);
+        textView = (TextView) findViewById(R.id.main_text);
     }
 
     @Override
