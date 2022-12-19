@@ -33,7 +33,13 @@ public class activity_Information extends AppCompatActivity implements AdapterVi
     String[] pet = {"강아지 종류 : ","골든리트리버","닥스훈트","말티즈","믹스견","비글","비숑 프리제","사모예드","스피츠","시바견","시츄",
             "요크셔테리어","웰시코기","진돗개","치와와","포메라니안","푸들","허스키"};
     String[] wei = {"강아지 무게 : ","0~5kg","5~10kg","10~15kg","15~20kg","20~30kg","30kg↑"};
-    String[] save = {"강아지 무게 : ","0ml ~ 250ml","250ml ~ 500ml","500ml ~ 750ml","750ml ~ 1L","1L ~ 1.5L","1.5L이상"};
+
+    String[] save = {"강아지 무게 : ","몸무게 0~5kg이 먹어야 할 양\n0ml ~ 250ml",
+            "몸무게 5~10kg 권장 음수량\n250ml ~ 500ml",
+            "몸무게 10~15kg 권장 음수량\n500ml ~ 750ml",
+            "몸무게 15~20kg 권장 음수량\n750ml ~ 1L",
+            "몸무게 20~30kg 권장 음수량\n1L ~ 1.5L",
+            "몸무게 30kg 이상 권장 음수량\n1.5L이상"};
 
     @Override
     public void onCreate(Bundle savedInstanceState)
