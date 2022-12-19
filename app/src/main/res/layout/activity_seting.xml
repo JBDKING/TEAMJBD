@@ -43,4 +43,13 @@
         android:textSize="30dp"
         android:backgroundTint="#F68C"/>
 
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="100dp"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:src="@drawable/back_img"
+        android:onClick="onHome1"/>
+
 </RelativeLayout>

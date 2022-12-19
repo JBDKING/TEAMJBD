@@ -33,7 +33,7 @@ public class activity_Information extends AppCompatActivity implements AdapterVi
     String[] pet = {"강아지 종류 : ","골든리트리버","닥스훈트","말티즈","믹스견","비글","비숑 프리제","사모예드","스피츠","시바견","시츄",
             "요크셔테리어","웰시코기","진돗개","치와와","포메라니안","푸들","허스키"};
     String[] wei = {"강아지 무게 : ","0~5kg","5~10kg","10~15kg","15~20kg","20~30kg","30kg↑"};
-    String[] save = {"강아지 무게 : ","0ml ~ 250ml","250ml ~ 500ml","500ml ~ 750ml","750ml ~ 1000ml","1000~1500","1500↑"};
+    String[] save = {"강아지 무게 : ","0ml ~ 250ml","250ml ~ 500ml","500ml ~ 750ml","750ml ~ 1L","1L ~ 1.5L","1.5L이상"};
 
     @Override
     public void onCreate(Bundle savedInstanceState)
@@ -86,7 +86,7 @@ public class activity_Information extends AppCompatActivity implements AdapterVi
 
         item2 = spinner2.getSelectedItem().toString();
         textView2.setText(item2);
-        Log.e("HTJ","position"+spinner2.getSelectedItemPosition());
+        Log.e("JBD","position"+spinner2.getSelectedItemPosition());
         index=spinner2.getSelectedItemPosition();
     }
 
@@ -111,8 +111,8 @@ public class activity_Information extends AppCompatActivity implements AdapterVi
             String id = databaseReference.push().getKey();
             databaseReference.child(id).setValue(member);
 
-            Log.e("HTJ","member"+member.getWei());
-            Log.e("HTJ","member"+member.getPet());
+            Log.e("JBD","몸무게"+member.getWei());
+            Log.e("JBD","견종"+member.getPet());
 
             databaseReference.setValue(save[index]);
             //databaseReference.setValue("")

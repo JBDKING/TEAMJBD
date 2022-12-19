@@ -112,4 +112,10 @@ public class activity_Seting extends AppCompatActivity implements TimePickerDial
         alarmManager.cancel(pendingIntent);
         time_text.setText("재설정");
     }
+
+    public void onHome1(View view)
+    {
+        Intent intent = new Intent(getApplicationContext(),activity_Main_m.class);
+        startActivity(intent);
+    }
 }

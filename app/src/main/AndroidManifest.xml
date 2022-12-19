@@ -40,6 +40,7 @@
         <activity android:name=".activity_Login"/>
         <activity android:name=".activity_Register"/>
         <activity android:name=".activity_Main"/>
+        <activity android:name=".activity_Main_m"/>
         <activity android:name=".activity_Seting"/>
         <activity android:name=".activity_Information"/>
         <activity android:name=".activity_Savedata"/>
