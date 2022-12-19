@@ -5,13 +5,10 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.AdapterView;
 
-import android.os.Bundle;
-import android.view.View;
-import android.widget.Adapter;
-import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.Spinner;
@@ -32,9 +29,11 @@ public class activity_Information extends AppCompatActivity implements AdapterVi
 
     Context mContext;
 
+    int index=0;
     String[] pet = {"강아지 종류 : ","골든리트리버","닥스훈트","말티즈","믹스견","비글","비숑 프리제","사모예드","스피츠","시바견","시츄",
-                    "요크셔테리어","웰시코기","진돗개","치와와","포메라니안","푸들","허스키"};
+            "요크셔테리어","웰시코기","진돗개","치와와","포메라니안","푸들","허스키"};
     String[] wei = {"강아지 무게 : ","0~5kg","5~10kg","10~15kg","15~20kg","20~30kg","30kg↑"};
+    String[] save = {"강아지 무게 : ","0ml ~ 250ml","250ml ~ 500ml","500ml ~ 750ml","750ml ~ 1000ml","1000~1500","1500↑"};
 
     @Override
     public void onCreate(Bundle savedInstanceState)
@@ -49,7 +48,7 @@ public class activity_Information extends AppCompatActivity implements AdapterVi
         button = findViewById(R.id.button_save);
 
         FirebaseDatabase database = FirebaseDatabase.getInstance();
-        databaseReference = database.getReference("Value");
+        databaseReference = database.getReference(activity_Data.getInstance(mContext).getName());
 
         spinner1 = findViewById(R.id.spinner1);
         spinner1.setOnItemSelectedListener(this);
@@ -87,6 +86,8 @@ public class activity_Information extends AppCompatActivity implements AdapterVi
 
         item2 = spinner2.getSelectedItem().toString();
         textView2.setText(item2);
+        Log.e("HTJ","position"+spinner2.getSelectedItemPosition());
+        index=spinner2.getSelectedItemPosition();
     }
 
     @Override
@@ -110,6 +111,11 @@ public class activity_Information extends AppCompatActivity implements AdapterVi
             String id = databaseReference.push().getKey();
             databaseReference.child(id).setValue(member);
 
+            Log.e("HTJ","member"+member.getWei());
+            Log.e("HTJ","member"+member.getPet());
+
+            databaseReference.setValue(save[index]);
+            //databaseReference.setValue("")
             Toast.makeText(this, "저장 완료", Toast.LENGTH_SHORT).show();
 
             Intent intent = new Intent(activity_Information.this, activity_Main.class);

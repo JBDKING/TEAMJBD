@@ -1,7 +1,6 @@
 package com.example.team_jbd;
 
 import android.Manifest;
-import android.bluetooth.BluetoothAdapter;
 import android.os.Bundle;
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -18,8 +17,5 @@ public class activity_Bluetooth extends AppCompatActivity
                         Manifest.permission.ACCESS_FINE_LOCATION,
                         Manifest.permission.ACCESS_COARSE_LOCATION
                 };
-
-        BluetoothAdapter bluetoothAdapter = BluetoothAdapter.getDefaultAdapter();
-
     }
 }

@@ -1,5 +1,6 @@
 package com.example.team_jbd;
 
+import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
@@ -22,13 +23,13 @@ public class activity_Login extends AppCompatActivity
     private FirebaseAuth mFirebaseAuth; // 파이어베이스 인증
     private DatabaseReference mDatabaseRef; // 실시간 테이터베이스
     private EditText mEtEmail, metPwd; // 로그인 입력
-
+    Context mContext;
     @Override
     protected void onCreate(Bundle savedInstanceState)
     {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
-
+        mContext=this;
         mFirebaseAuth = FirebaseAuth.getInstance();
         mDatabaseRef = FirebaseDatabase.getInstance().getReference("firebase_test");
 
@@ -44,7 +45,9 @@ public class activity_Login extends AppCompatActivity
                 // 로그인
                 String strEmail = mEtEmail.getText().toString();
                 String strPwd = metPwd.getText().toString();
-
+                String save=strEmail.replace("@","");
+                save=save.replace(".","");
+                activity_Data.getInstance(mContext).setName(save);
                 mFirebaseAuth.signInWithEmailAndPassword(strEmail, strPwd).addOnCompleteListener(activity_Login.this, new OnCompleteListener<AuthResult>()
                 {
                     @Override
