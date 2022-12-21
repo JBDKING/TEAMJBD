@@ -26,4 +26,10 @@ public class activity_Main_m extends AppCompatActivity
         Intent intent = new Intent(getApplicationContext(),activity_Main.class);
         startActivity(intent);
     }
+
+    public void onDog_tip(View view)
+    {
+        Intent intent = new Intent(getApplicationContext(),activity_Tip.class);
+        startActivity(intent);
+    }
 }
