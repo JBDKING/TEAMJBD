@@ -1,33 +1,34 @@
 {
   "project_info": {
-    "project_number": "157193967302",
-    "project_id": "team-jbd",
-    "storage_bucket": "team-jbd.appspot.com"
+    "project_number": "306717743545",
+    "firebase_url": "https://fir-bad25-default-rtdb.firebaseio.com",
+    "project_id": "fir-bad25",
+    "storage_bucket": "fir-bad25.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:157193967302:android:ffbdf10c807049e86569c7",
+        "mobilesdk_app_id": "1:306717743545:android:d3e1ab737d024ee2cf7e68",
         "android_client_info": {
           "package_name": "com.example.team_jbd"
         }
       },
       "oauth_client": [
         {
-          "client_id": "157193967302-vj1mgqb67h2sc7d0hs2dmdni24833og9.apps.googleusercontent.com",
+          "client_id": "306717743545-8vdjkn316iii9jr52eesmh0glcvo56ln.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyBgWygFelfB3KYlqsBbHkHuU3ukrkWMKGw"
+          "current_key": "AIzaSyColJBEAiZIm_I2e5Ml0SdTwMenKcJhOsA"
         }
       ],
       "services": {
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "157193967302-vj1mgqb67h2sc7d0hs2dmdni24833og9.apps.googleusercontent.com",
+              "client_id": "306717743545-8vdjkn316iii9jr52eesmh0glcvo56ln.apps.googleusercontent.com",
               "client_type": 3
             }
           ]

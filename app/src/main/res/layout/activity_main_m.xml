@@ -6,16 +6,18 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <View
-        android:layout_width="match_parent"
-        android:layout_height="3dp"
-        android:layout_marginTop="100dp"
-        android:background="#dcdcdc" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25dp"
+        android:text="기울기 0 = 평평함\n기울기 1 = 기울어짐"
+        android:textSize="18dp"/>
 
     <View
         android:layout_width="match_parent"
         android:layout_height="3dp"
-        android:layout_marginTop="570dp"
+        android:layout_marginTop="100dp"
         android:background="#dcdcdc" />
 
     <ImageView
@@ -57,9 +59,11 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="vertical">
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="315dp"
+        android:layout_marginLeft="70dp">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -70,15 +74,19 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="물의 양 : "
-                android:textSize="35dp"/>
+                android:textSize="35dp" />
+
+            <TextView
+                android:id="@+id/textView_M"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20dp" />
+
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:id="@+id/textView_M"/>
-            <EditText
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:ems="10"/>
+                android:text="L"
+                android:textSize="20dp"/>
         </LinearLayout>
 
         <LinearLayout
@@ -89,18 +97,15 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="기울기 :"
-                android:textSize="35dp"/>
+                android:text="기울기 : "
+                android:textSize="35dp" />
+
             <TextView
+                android:id="@+id/textView_val"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:id="@+id/textView_val"/>
-            <EditText
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:ems="10"/>
+                android:textSize="20dp" />
+
         </LinearLayout>
     </LinearLayout>
-
-
 </RelativeLayout>

@@ -1,12 +1,18 @@
 package com.example.team_jbd;
 
+import static android.app.PendingIntent.getActivity;
+
+import android.Manifest;
+import android.bluetooth.BluetoothAdapter;
 import android.content.Context;
 import android.content.Intent;
 import android.os.Build;
 import android.os.Bundle;
 import android.os.Handler;
+import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.fragment.app.FragmentActivity;
 
 public class activity_Logo extends AppCompatActivity
 {
